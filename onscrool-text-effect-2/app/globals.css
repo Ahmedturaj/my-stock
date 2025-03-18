@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-press-start: "Press Start 2P", system-ui;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-press-start);
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  background-color: #0a0a0a;
+  color: #ededed;
+}
+.content_title::before {
+  font-weight: 400;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10vh;
+  text-align: center;
+}
